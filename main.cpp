@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "audiowindow.h"
+//#include "audiowindow.h"
 #include <QApplication>
 #include <QHBoxLayout>
 #include <QSpinBox>
