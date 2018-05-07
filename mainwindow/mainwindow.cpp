@@ -29,7 +29,6 @@ MainWindow::MainWindow(QWidget *parent) :
     spinner->setValue(10);
 
 
-
     QPixmap fuelguage("/home/shane/carGui/images/fuelguage.png");
     ui->fuelGauge->setPixmap(fuelguage);
 

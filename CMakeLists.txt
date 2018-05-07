@@ -15,6 +15,7 @@ find_package(Qt5Widgets)
 add_subdirectory(mainwindow)
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/mainwindow
+		     ${CMAKE_CURRENT_SOURCE_DIR}/images
                    )
 
 #set the header files
