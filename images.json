@@ -1,0 +1,7 @@
+{
+    "fuel": "/home/dev/carGui/images/fuelguage.png",
+    "odometer": "/home/dev/carGui/images/odometer.png",
+    "tach": "/home/dev/carGui/images/tachometer.png",
+    "left-turn-signal": "/home/dev/carGui/images/turn_indicator_left.png",
+    "right-turn-signal": "/home/dev/carGui/images/turn_indicator.png"
+}
