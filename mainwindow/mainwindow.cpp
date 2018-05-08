@@ -1,11 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "qpainter.h"
-#include <QtQml/QQmlEngine>
-#include <QtQuick/QQuickView>
-#include <QtQml/QQmlComponent>
-#include <QtQml/QQmlEngine>
-#include <QtQml/QQmlContext>
+//#include <QtQml/QQmlEngine>
+//#include <QtQuick/QQuickView>
+//#include <QtQml/QQmlComponent>
+//#include <QtQml/QQmlEngine>
+//#include <QtQml/QQmlContext>
 #include <QGraphicsObject>
 #include <QWidget>
 #include <QCoreApplication>
@@ -29,24 +29,24 @@ MainWindow::MainWindow(QWidget *parent) :
     spinner->setValue(10);
 
 
-    QPixmap fuelguage("/home/shane/carGui/images/fuelguage.png");
+    QPixmap fuelguage("../images/fuelguage.png");
     ui->fuelGauge->setPixmap(fuelguage);
 
-    QPixmap Tachometer("/home/shane/carGui/images/tachometer.png");
+    QPixmap Tachometer("../images/tachometer.png");
     ui->tachometer->setPixmap(Tachometer);
 
-    QPixmap Speedometer("/home/shane/carGui/images/odometer.png");
+    QPixmap Speedometer("../images/odometer.png");
     ui->speedometer->setPixmap(Speedometer);
 
-    QPixmap rightIndicator("/home/shane/carGui/images/turn_indicator.png");
+    QPixmap rightIndicator("../images/turn_indicator.png");
     ui->rightInd->setPixmap(rightIndicator);
 
-    QPixmap leftIndicator("/home/shane/carGui/images/turn_indicator_left.png");
+    QPixmap leftIndicator("../images/turn_indicator_left.png");
     ui->leftInd->setPixmap(leftIndicator);
 
     //QPixmap needleTach("/home/shane/carGui/images/needle.png");
     //ui->needletach->setPixmap(needleTach);
-
+\
     QPixmap needleOdo("/home/shane/carGui/images/needle.png");
     ui->needleodo->setPixmap(needleOdo);
 
