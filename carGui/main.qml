@@ -6,14 +6,15 @@ Window {
 
     visible: true
         width: 800
-        height: 480
+        height: 481
         color: "#171616"
         title: qsTr("Car")
 
         property double needleAngle_tach: 0
         property double needleAngle_odo: 0
         id: mainpage
-        Image {
+        Image
+        {
             id: odometer
             x: 422
             y: 1
@@ -22,7 +23,8 @@ Window {
             source: "file:////home/shane/carGui/images/odometer.png"
         }
 
-        Image {
+        Image
+        {
             id: fuelgauge
             x: 325
             y: 313
@@ -31,7 +33,8 @@ Window {
             source: "file:////home/shane/carGui/images/fuelguage.png"
         }
 
-        Image {
+        Image
+        {
             id: tachometer
             x: 0
             y: 1
@@ -41,7 +44,8 @@ Window {
 
         }
 
-        Image {
+        Image
+        {
             id: needle_odo
             x: 529
             y: 30
@@ -57,7 +61,8 @@ Window {
             smooth: true
         }
 
-        Button {
+        Button
+        {
             id: binplus_tach
             x: 0
             y: 306
@@ -67,7 +72,8 @@ Window {
             onClicked: needleAngle_tach +=10
         }
 
-        Button {
+        Button
+        {
             id: binMinus_tach
             x: 67
             y: 306
@@ -77,7 +83,8 @@ Window {
             onClicked: needleAngle_tach -=10
         }
 
-        Image {
+        Image
+        {
             id: needle_tach
             x: 116
             y: 30
@@ -93,7 +100,8 @@ Window {
             smooth: true
         }
 
-        Button {
+        Button
+        {
             id: binplus_odo
             x: 663
             y: 306
@@ -105,7 +113,8 @@ Window {
 
 
 
-        Button {
+        Button
+        {
             id: binMinus_odo
             x: 736
             y: 306
@@ -115,7 +124,8 @@ Window {
             onClicked: needleAngle_odo -=10
         }
 
-        Image {
+        Image
+        {
             id: rightsignal
             x: 422
             y: 270
@@ -125,7 +135,8 @@ Window {
         }
 
 
-        Image {
+        Image
+        {
             id: leftsignal
             x: 325
             y: 270
@@ -134,7 +145,8 @@ Window {
             source: "file:////home/shane/carGui/images/turn_indicator_left.png"
         }
 
-        Image {
+        Image
+        {
             id: needle_fuel1
             x: 364
             y: 326
@@ -150,7 +162,8 @@ Window {
             smooth: true
         }
 
-        Image {
+        Image
+        {
             id: needle_fuel2
             x: 339
             y: 365
@@ -172,15 +185,51 @@ Window {
             id:pageLoader
         }
 
-        Button {
+        Button
+        {
             id: audioButton
+            x: 157
+            y: 403
+            width: 113
+            height: 67
+            text: qsTr("")
+            iconSource: "file:////home/shane/carGui/images/music.png"
+
+            onClicked: {
+                            pageLoader.source = "audio.qml"
+                       }
+        }
+
+        Button
+        {
+            id: diagnosticsButton
+            x: 672
+            y: 403
+            width: 113
+            height: 67
+            text: qsTr("")
+            iconSource: "file:////home/shane/carGui/images/diagnostics.png"
+        }
+
+        Button
+        {
+            id: settingsButton
+            x: 529
+            y: 403
+            width: 113
+            height: 67
+            text: ""
+            iconSource: "file:////home/shane/carGui/images/settings.png"
+        }
+
+        Button {
+            id: homeButton
             x: 18
             y: 403
             width: 113
             height: 67
-            text: qsTr("Audio ")
-
-            onClicked: pageLoader.source = "audio.qml"
+            text: ""
+            iconSource: "file:////home/shane/carGui/images/home.png"
         }
 
 
